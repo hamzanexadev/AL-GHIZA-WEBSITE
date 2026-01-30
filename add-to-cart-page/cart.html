@@ -49,7 +49,7 @@
         </div>
         <div class="order">
             <h4>AL-GHIZA</h4>
-            <h2>Ajwa Talbeena</h2>
+            <h2 class="order-heading">Ajwa Talbeena</h2>
             <div class="rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -74,8 +74,98 @@
             <div id="modal" class="modal-overlay">
                 <div class="modal-box">
                     <button id="closeBtn" class="modal-close">×</button>
-                    <h1>Product Sucessfully added</h1>
+                    <h2 class="modal-heading">Your Cart</h2>
+                    <hr>
+                    <div class="scroll-box">
+                        <div class="cart-item">
+                            <img src="./assets/product1.png" alt="AJWA Talbeena" class="product-img">
 
+                            <div class="product-info">
+                                <h3>Almond Talbeena</h3>
+                                <p class="weight">300 grams</p>
+                                <p class="price1">Rs. 1,850</p>
+                            </div>
+
+                            <div class="qty-box">
+                                <button onclick="decreaseCount1()">-</button>
+                                <p id="count1">0</p>
+                                <button onclick="increaseCount1()">+</button>
+                            </div>
+
+                            <div class="delete" onclick='resetCount1()'>
+                                🗑
+                            </div>
+                        </div>
+                        <p class="para1">+ <span>Add more items</span></p>
+                        <hr>
+
+                        <div class="cart-container">
+
+                            <!-- Popular Section -->
+                            <div class="popular-header">
+                                <div>
+                                    <h3>Popular with your order</h3>
+                                    <p>Customers often buy these together</p>
+                                </div>
+                                <div class="nav-btns">
+                                    <button>‹</button>
+                                    <button>›</button>
+                                </div>
+                            </div>
+
+                            <div class="products">
+                                <div class="product-card">
+                                    <img src="/assets/product2.png" alt="">
+                                    <button class="add-btn">+</button>
+                                    <p class="price2">Rs. 1,650</p>
+                                    <p class="name">Almond Talbeena</p>
+                                </div>
+
+                                <div class="product-card">
+                                    <img src="/assets/product3.png" alt="">
+                                    <button class="add-btn">+</button>
+                                    <p class="price2">Rs. 2,200</p>
+                                    <p class="name">Saffron Talbeena</p>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!-- Summary -->
+                            <div class="summary">
+                                <div class="row">
+                                    <span>Total</span>
+                                    <span>Rs. 1,650</span>
+                                </div>
+                                <div class="row">
+                                    <span>Tax 18%</span>
+                                    <span>Rs. 297</span>
+                                </div>
+                                <div class="row">
+                                    <span>Delivery Fee</span>
+                                    <span>Rs. 100</span>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="grand-total">
+                                <span>Grand Total</span>
+                                <span>Rs. 2,047</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Checkout -->
+                    <button class="checkout-btn">
+                        Checkout <span>→</span>
+                    </button>
+
+                    <p class="delivery-info">
+                        Your order will be delivered approximately in
+                        <span>2 - 3 Days</span><br>
+                        approximately on <span> January 31, 2026 at 1:42 AM</span>
+                    </p>
                 </div>
             </div>
             <button class="btn">Buy it Now</button>

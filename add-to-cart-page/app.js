@@ -89,3 +89,30 @@ document.addEventListener("keydown", function (event) {
         closeModal();
     }
 });
+
+let count1 = 0;
+
+function updateCount1() {
+    document.getElementById("count1").innerHTML = count1;
+}
+
+function increaseCount1() {
+    if (count1 <= 9) {
+        count1++;
+        updateCount1()
+    }
+}
+
+function decreaseCount1() {
+    if (count1 <= 0) {
+    }
+    else {
+        count1--;
+        updateCount1()
+    }
+}
+
+function resetCount1() {
+    count1 = 0;
+    updateCount1();
+}
