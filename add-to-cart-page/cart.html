@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> AL-GHIZA – Premium Natural Nutrition</title>
+    <link rel="shortcut icon" href="./assets/logo.jpeg" type="image/x-icon">
+    <meta name="viewport" content="width=1260">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="cart.css">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav-wrapper">
+
+            <nav class="nav-left">
+                <a href="/index.html">Home</a>
+                <a href="/product-page/product.html">Products</a>
+                <a href="/contact-page/contact.html">Contact</a>
+            </nav>
+
+            <div class="logo">
+                <img src="./assets/logo.jpeg" alt="">
+            </div>
+
+            <nav class="nav-right">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+
+        </div>
+    </header>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="img-box">
+            <img class="prod-img" src="/assets/product1.png" alt="">
+        </div>
+        <div class="order">
+            <h4>AL-GHIZA</h4>
+            <h2>Ajwa Talbeena</h2>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>231 reviews</p>
+            </div>
+            <p class="price">Rs. 1,850</p>
+            <div class="weight-btn">
+                <h5>Weight</h5>
+                <button id="toggleButton" onclick="">300 grams</button>
+                <button id="toggleButton1" onclick="">500 grams</button>
+                <button id="toggleButton2" onclick="">1 kg</button>
+            </div>
+            <div class="counter">
+                <button onclick="decreaseCount()">-</button>
+                <p id="count">0</p>
+                <button onclick="increaseCount()">+</button>
+            </div>
+            <button class="btn" id="openBtn">Add to Cart</button>
+            <div id="modal" class="modal-overlay">
+                <div class="modal-box">
+                    <button id="closeBtn" class="modal-close">×</button>
+                    <h1>Product Sucessfully added</h1>
+
+                </div>
+            </div>
+            <button class="btn">Buy it Now</button>
+        </div>
+    </section>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
